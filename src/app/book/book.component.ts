@@ -13,6 +13,7 @@ import {Router} from "@angular/router";
 export class BookComponent implements OnInit {
 
   books: Book[] = [];
+  total?: number;
 
   formBook!: FormGroup;
 
@@ -34,6 +35,7 @@ export class BookComponent implements OnInit {
 
   findAll(){
     this.bookService.findAll().subscribe(data => {
+      this.total = data.length;
       this.books = data
     })
   }

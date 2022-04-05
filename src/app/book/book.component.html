@@ -28,6 +28,7 @@
 <!--             aria-label="Search through site content">-->
 <!--      <button>Search</button>-->
 <!--      <button class="favorite styled" routerLink="/sang/create" type="button"> create</button>-->
+      <h1>List Books</h1>
       <button class="btn btn-success" routerLink="/sang/create" type="button">Create</button>
 
       <table style="border: 2px">
@@ -39,7 +40,7 @@
         <tr style="background-color: darkgray">
           <th style="text-align: center">Id</th>
           <th style="text-align: center">Name</th>
-          <th style="text-align: center">Price</th>
+          <th style="text-align: center">Author</th>
           <th style="text-align: center">Edit</th>
           <th style="text-align: center">Delete</th>
         </tr>
@@ -69,6 +70,9 @@
               <mat-icon>delete</mat-icon>
             </button>
           </td>
+        </tr>
+        <tr>
+          <td colspan="5">Total Books: {{total}}</td>
         </tr>
         </tbody>
       </table>
