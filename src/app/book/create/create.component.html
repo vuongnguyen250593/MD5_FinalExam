@@ -1,0 +1,25 @@
+<div class="container">
+  <form [formGroup]="formGroup" (ngSubmit)="saveBook()">
+    <div class="form-group">
+      <label for="email">ID:</label>
+      <input type="number" class="form-control" placeholder="Enter id" formControlName="id" id="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Name:</label>
+      <input type="text" class="form-control" formControlName="title" placeholder="Enter name" id="pwd">
+    </div>
+    <div class="form-group">
+      <label for="pwd1">Author:</label>
+      <input type="text" class="form-control" formControlName="author" placeholder="Enter price" id="pwd1">
+    </div>
+    <div class="form-group">
+      <label for="pwd3">Description:</label>
+      <textarea class="form-control" formControlName="description" placeholder="Enter description" id="pwd3" cols="30" rows="4"></textarea>
+<!--      <input type="text" class="form-control" formControlName="description" placeholder="Enter description" id="pwd3">-->
+    </div>
+
+    <button type="submit"  class="btn btn-primary">Submit</button>
+
+    <button type="submit" routerLink="/book" class="btn">Back to list</button>
+  </form>
+</div>
