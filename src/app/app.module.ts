@@ -13,7 +13,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {BookModule} from "./book/book.module";
 import {MatIconModule} from "@angular/material/icon";
-
+import {CKEditorModule} from "ngx-ckeditor";
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +30,7 @@ import {MatIconModule} from "@angular/material/icon";
         BrowserAnimationsModule,
         BookModule,
         MatIconModule,
-
+        CKEditorModule
     ],
   providers: [],
   bootstrap: [AppComponent]

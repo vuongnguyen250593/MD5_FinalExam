@@ -14,3 +14,13 @@ quote_type = single
 [*.md]
 max_line_length = off
 trim_trailing_whitespace = false
+
+CKEDITOR.editorConfig = function( config ) {
+//   config.enterMode = 2 ; //disabled <p> completely
+config.enterMode = CKEDITOR.ENTER_BR // pressing the ENTER KEY input <br/>
+config.shiftEnterMode = CKE DITOR.ENTER_P ; //pressing the SHIFT + ENTER KEYS input <p>
+config.autoParagraph = false ; // stops automatic insertion of <p> on focus
+} ;
+
+CKEDITOR.config.enterMode = CKEDITOR.ENTER_BR
+CKEDITOR.config.forcePasteAsPlainText = true
